@@ -3,82 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Dimas - Editor Profesional</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CV Dimas - Expert Editor</title>
+    <style>
+        /* CSS UNTUK TAMPILAN */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .cv-container {
+            width: 900px;
+            background: white;
+            display: flex;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Sidebar (Bagian Hitam/Gelap) */
+        .sidebar {
+            width: 35%;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 40px 30px;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 5px solid #e74c3c; /* Border merah mengikuti background foto */
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            margin: 10px 0;
+            letter-spacing: 2px;
+            color: #e74c3c;
+        }
+
+        .sidebar h3 {
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .contact-info p, .skill-list li, .lang-list p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #ccc;
+        }
+
+        /* Isi Utama (Bagian Putih) */
+        .main-content {
+            width: 65%;
+            padding: 50px;
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            border-left: 5px solid #e74c3c;
+            padding-left: 15px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .edu-item, .org-item {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .year {
+            font-weight: bold;
+            color: #e74c3c;
+            display: block;
+            font-size: 14px;
+        }
+
+        .hobby-tags span {
+            background: #eee;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        p { line-height: 1.6; }
+    </style>
 </head>
 <body>
+
     <div class="cv-container">
         <aside class="sidebar">
-            <div class="profile-frame">
-                <img src="foto_dimas.jpg" alt="Foto Dimas" class="profile-img-real">
-            </div>
-            
-            <h2>DIMAS</h2>
-            <p class="tagline">Creative Video Editor</p>
-            
-            <div class="contact-section">
-                <h3>KONTAK</h3>
-                <p>📞 089532489</p>
-                <p>📍 Pluto</p>
-                <p>📸 IG: @dimas_edit</p>
+            <div class="profile-section">
+                <img src="https://i.ibb.co/L6V6P2Y/Gemini-Generated-Image-64qo7e64qo7e64qo.jpg" alt="Dimas" class="profile-img">
+                <h1>DIMAS</h1>
+                <p style="color: #e74c3c;">Expert Video Editor</p>
             </div>
 
-            <div class="skills-section">
-                <h3>KEAHLIAN</h3>
-                <ul>
-                    <li>Video Editing (Expert)</li>
-                    <li>Color Grading</li>
-                    <li>Visual Effects</li>
+            <div class="contact-info">
+                <h3>Kontak</h3>
+                <p>📞 089532489</p>
+                <p>📍 Alamat: Pluto</p>
+                <p>📸 IG: @dimas_username</p>
+                <p>🎂 Lahir: 2007</p>
+            </div>
+
+            <div class="skills">
+                <h3>Keahlian Edit</h3>
+                <ul class="skill-list" style="list-style: none; padding: 0;">
+                    <li>✔ Video Cutting & Montage</li>
+                    <li>✔ Color Grading</li>
+                    <li>✔ Motion Graphics</li>
                 </ul>
             </div>
 
-            <div class="lang-section">
-                <h3>BAHASA</h3>
-                <p>Indonesia (Lancar)</p>
-                <p>Arab (Aktif)</p>
+            <div class="languages">
+                <h3>Bahasa</h3>
+                <p>🇮🇩 Indonesia (Native)</p>
+                <p>🇸🇦 Arab (Aktif)</p>
             </div>
         </aside>
 
         <main class="main-content">
-            <section class="about">
-                <h2>TENTANG SAYA</h2>
-                <p>Halo! Saya Dimas, lahir tahun 2007. Saya adalah seorang ahli ngedit yang punya passion tinggi di dunia visual. Selain hobi angkat beban di gym, saya fokus mengasah skill editing untuk menghasilkan karya yang estetik dan berkualitas tinggi.</p>
+            <section>
+                <h2>Tentang Saya</h2>
+                <p>Saya adalah seorang profesional muda yang ahli dalam bidang pengeditan video. Dengan dedikasi tinggi dan mata yang jeli terhadap detail visual, saya mampu mengubah footage mentah menjadi karya seni yang menarik. Selain dunia kreatif, saya aktif menjaga kebugaran di gym untuk menunjang performa kerja maksimal.</p>
             </section>
 
-            <section class="education">
-                <h2>PENDIDIKAN</h2>
-                <div class="item">
-                    <span class="year">2022 - 2025</span>
-                    <p><strong>SMA Negeri Pluto</strong> (Lulus 2025)</p>
+            <section>
+                <h2>Pendidikan</h2>
+                <div class="edu-item">
+                    <span class="year">2023 - 2026</span>
+                    <strong>SMA KP</strong> (Lulus Tahun 2026)
                 </div>
-                <div class="item">
-                    <span class="year">2019 - 2022</span>
-                    <p><strong>SMP Negeri Pluto</strong> (Lulus 2022)</p>
+                <div class="edu-item">
+                    <span class="year">2020 - 2023</span>
+                    <strong>SMP Negeri Pluto</strong> (Lulus Tahun 2023)
                 </div>
-                <div class="item">
-                    <span class="year">2013 - 2019</span>
-                    <p><strong>SD Negeri Pluto</strong> (Lulus 2019)</p>
+                <div class="edu-item">
+                    <span class="year">2014 - 2020</span>
+                    <strong>SD Negeri Pluto</strong> (Lulus Tahun 2020)
                 </div>
             </section>
 
-            <section class="experience">
-                <h2>PENGALAMAN ORGANISASI</h2>
-                <ul>
-                    <li><strong>OSIS SMA:</strong> Divisi Dokumentasi & Kreatif (2023)</li>
-                    <li><strong>Pramuka SMP:</strong> Anggota Aktif & Dokumentasi Kegiatan (2020)</li>
-                    <li><strong>Dokumenter SD:</strong> Tim Kreatif Perpisahan Sekolah (2019)</li>
-                </ul>
+            <section>
+                <h2>Pengalaman Organisasi</h2>
+                <div class="org-item">
+                    <strong>OSIS SMA KP</strong>
+                    <p>Bertanggung jawab dalam divisi dokumentasi dan konten kreatif sekolah.</p>
+                </div>
+                <div class="org-item">
+                    <strong>Pramuka SMP</strong>
+                    <p>Aktif dalam tim lapangan dan dokumentasi kegiatan kepramukaan.</p>
+                </div>
             </section>
 
-            <section class="hobbies">
-                <h2>HOBBY</h2>
+            <section>
+                <h2>Hobby</h2>
                 <div class="hobby-tags">
-                    <span>🏋️ Gym</span>
-                    <span>🎬 Editing</span>
-                    <span>🚀 Exploring</span>
+                    <span>🏋️ Gym / Angkat Beban</span>
+                    <span>🎬 Editing Video</span>
+                    <span>🌌 Eksplorasi Pluto</span>
                 </div>
+            </section>
+
+            <section>
+                <h2>Sertifikat</h2>
+                <p><em>Saat ini belum ada sertifikat formal, namun keahlian dibuktikan melalui portofolio hasil editan.</em></p>
             </section>
         </main>
     </div>
+
 </body>
 </html>
