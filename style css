@@ -1,0 +1,19 @@
+/* Styling Baru untuk Foto */
+.profile-frame {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 4px solid #3498db;
+    border-radius: 50%;
+    overflow: hidden; /* Supaya foto tetap bulat */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.profile-img-real {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Supaya foto tidak gepeng */
+}
